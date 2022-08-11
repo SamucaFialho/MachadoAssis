@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/*
+cor1 -#6B3A2F
+cor2 -#EEBBB0
+cor3 - #EB8067
+cor4 - #EB7F67
+cor5 - #B86451
+*/
+
+:root{
+    --cor1: #6B3A2F;
+    --cor2: #EEBBB0;
+    --cor3: #EB8067;
+    --cor4: #EB7F67;
+    --cor5: #B86451; /* var(--cor1)*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-color: #6B3A2F;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+
+    background-image: linear-gradient(to top, var
+    (cor--2), var(--cor1));
+    min-height: 100px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+nav{
+    background-color: black;
+    padding: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+nav > a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 7px;
+    transition-duration: 0.5;
+}
+nav > a:hover{
+    background-color: yellow;
+    color: aqua;
+}
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 4px 5px 16px 3px;
+
+}
+
+h2{
+    color: black;
+    background-image: linear-gradient(to right,
+    var(--cor2), transparent);
+    margin-bottom: 15px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 40px;
+    margin-top: 10px;
+}
+pre{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+iframe, img{
+    border: 6px solid var(--cor5);
+    margin: 20px 0px;
+}
+img{
+    border: 6px solid var(--cor5);
+    width: 200px;
+    margin-top: 15px;
+}
+figcaption{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+aside{
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 5px;
+}
+h3{
+    background-color: var(--cor5);
+    padding: 10px;
+    margin: -15px -10px 0pc -10px;
+    border-radius: 10px 10px 0px 10px;
+}
+ul{
+    list-style-position: inside;
+    text-align: justify;
+}
+footer{
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+}
+footer > a{
+    text-decoration: none;
+    color: black;
+}
